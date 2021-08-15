@@ -90,22 +90,22 @@ void Update()
     private void OnTriggerEnter2D(Collider2D collider)
     {
         //Check tto see if player is touching an Enemy
-        if (collider.CompareTag("Enemy"))
+        if (collider.CompareTag("foe"))
             Die();
         {
             //Debug.Log("The player is touching" + collider.tag + "tag!");
         }
-        if (collider.CompareTag("Enemyone"))
+        if (collider.CompareTag("foeone"))
         {
             Die();
         }
-        if (collider.CompareTag("DeathZone"))
+        if (collider.CompareTag("deathpit"))
         {
             //Debug.Log("The Player Hit The DeathZone");
             Die();
         }
         {
-            if (collider.CompareTag("WinCondition"))
+            if (collider.CompareTag("wincondition"))
                 SceneManager.LoadScene("GameWinCondition");
         }
         //if (gameObject.transform.position.x>=160)
