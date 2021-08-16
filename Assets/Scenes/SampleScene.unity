@@ -418,6 +418,7 @@ GameObject:
   - component: {fileID: 1537996306}
   - component: {fileID: 1537996311}
   - component: {fileID: 1537996308}
+  - component: {fileID: 1537996312}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -432,7 +433,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537996305}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fdd3da308369f5f47bdc9f52ee5f588b, type: 3}
   m_Name: 
@@ -492,7 +493,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!212 &1537996309
 SpriteRenderer:
@@ -577,3 +578,16 @@ MonoBehaviour:
   isGameOver: 0
   oneupboxcounter: 0
   coinboxcounter: 0
+--- !u!114 &1537996312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537996305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0474378a33f9145bc273dc1d4cfb03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
